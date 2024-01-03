@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style des cartes de la page d'accueil *//
+
+.collapseHead {
+  @include collpase-display;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 52px;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: $secondary-color;
+  position: relative;
+  
+  &_title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.collapseBody {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color: $background-color;
+  border-radius: 5px;
+
+  &_description {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px;
+    color: $primary-color;
+  }
+}
+
+//* Style des flèches de la collapse et du contenu *//
+
+.arrow {
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow_up {
+  transform: rotate(0deg);
+}
+
+.arrow_down{
+  transform: rotate(180deg);
+}

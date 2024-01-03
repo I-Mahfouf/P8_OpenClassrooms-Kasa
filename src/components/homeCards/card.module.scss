@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style des cartes de la page d'accueil *//
+
+.card {
+  background: $lineargradient-cards;
+  color: $secondary-color;
+  border-radius: 10px;
+  width: 340px;
+  height: 340px;
+  padding: 20px;
+
+  @include small-screen {
+    width: 100%;
+  }
+}
+
+.cardContent {
+  display: flex;
+  height: 100%;
+
+  &_text {
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+    @include small-screen {
+      font-size: 18px;
+    }
+  }
+}
+

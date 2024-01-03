@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style du Header *//
+
+.headerContainer {
+  @include header-display;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 45px 100px 50px;
+
+  @include small-screen {
+    font-size: 12px;
+    padding: 45px 20px 27px;
+  }
+}
+
+.navList {
+  @include flex-row;
+  list-style-type: none;
+  gap: 57px;
+
+  @include small-screen {
+    gap: 26px;
+  }
+
+  &_btnHome,
+  &_btnAbout {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  li {
+    &:hover,
+    &:focus {
+    text-decoration-line: underline;
+    }
+  }
+}

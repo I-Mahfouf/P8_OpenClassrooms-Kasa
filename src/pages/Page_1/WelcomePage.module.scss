@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style de la page d'accueil *//
+
+.cardsLayout {
+    @include flex-row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    border-radius: 25px;
+    background-color: $background-color;
+
+    @include small-screen {
+        background-color: $secondary-color;
+        gap: 20px;
+        padding: 0;
+        margin-top: 22px;
+        margin-bottom: 27px;
+    }
+}
+
+.cardsContainer {
+    width: 90%;
+}

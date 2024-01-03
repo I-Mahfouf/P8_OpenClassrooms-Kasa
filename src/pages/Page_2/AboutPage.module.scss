@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style de la page d'accueil *//
+
+.cardsSection {
+    width: 71%;
+}
+
+.cardsContainer {
+    @include flex-column;
+    gap: 38px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+  

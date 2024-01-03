@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+//* Style du Footer *//
+
+.footerContainer {
+    @include footer-display;
+    padding-top: 68px;
+    padding-bottom: 30px;
+    background-color: $black;
+    gap: 29px;
+}
+
+.footerText {
+    color: $secondary-color;
+}
