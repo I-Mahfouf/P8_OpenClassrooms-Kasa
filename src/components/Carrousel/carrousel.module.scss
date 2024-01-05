@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style du carrousel de la page "À propos" *//
+
+.mainCarrousel {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30px;
+    
+    &_pic {
+    border-radius: 25px;
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    }
+    
+    &_numbers {
+    font-size: 14px;
+    padding: 25px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    }
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  
+    img {
+        width: 40px; 
+        height: auto;
+    }
+}
+  
+.prevButton {
+  left: 10px;
+}
+  
+.nextButton {
+  right: 10px;
+}
+

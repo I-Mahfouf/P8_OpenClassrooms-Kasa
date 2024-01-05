@@ -93,7 +93,7 @@
 	},
 	{
 		"id": "7af00cd6",
-		"title": "Nid douillet au coeur du 11Ã¨me",
+		"title": "Nid douillet au coeur du 11e",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
@@ -101,7 +101,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-3.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-4.jpg"
 		],
-		"description": "Venez dÃ©couvrir Paris en sÃ©journant dans ce nid douillet au coeur du 11Ã¨me. La vue sur le parc rÃ©sidentiel saura vous reposer de vos longues journÃ©es de tourisme dans la capitale franÃ§aise. Et pour les plus fÃªtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de dÃ©couvrir la night-life parisienne Ã  seulement 5 minutes de l'appartement.",
+		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc rÃ©sidentiel saura vous reposer de vos longues journÃ©es de tourisme dans la capitale franÃ§aise. Et pour les plus fÃªtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de dÃ©couvrir la night-life parisienne Ã  seulement 5 minutes de l'appartement.",
 		"host": {
 			"name": "Della Case",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -183,7 +183,7 @@
 	},
 	{
 		"id": "b4c67936",
-		"title": "Cheap - Studio 18Ã¨me",
+		"title": "Cheap - Studio 18e",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
@@ -226,7 +226,7 @@
 		],
 		"description": "Ce superbe appartement vous surprendra par son charme. EntiÃ¨rement refait Ã  neuf, il est Ã©quipÃ© avec goÃ»t. La taille des piÃ¨ces vous fera douter que vous Ãªtes Ã  Paris. Mais il vous suffit de sortir pour voir que vous Ãªtes au coeur des plus belles attractions de Paris : le Louvre, la Tour Eiffel, le Grand Palais sont Ã  deux pas. Ã€ vous de venir dÃ©couvrir Paris !",
 		"host": {
-			"name": "SÃ©bastien Fournier",
+			"name": "Sébastien Fournier",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-5.jpg"
 		},
 		"rating": "5",
@@ -340,7 +340,7 @@
 	},
 	{
 		"id": "5323c29b",
-		"title": "Studio fonctionnel RÃ©publique",
+		"title": "Studio fonctionnel République",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
@@ -373,7 +373,7 @@
 	},
 	{
 		"id": "af6d2d48",
-		"title": "Bungalow dans la forÃªt",
+		"title": "Bungalow dans la forêt",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-1.jpg",
@@ -438,7 +438,7 @@
 	},
 	{
 		"id": "ba55a0cc",
-		"title": "Maison T5 - Le VÃ©sinet",
+		"title": "Maison T5 - Le Vésinet",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg",
@@ -447,7 +447,7 @@
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-4.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-5.jpg"
 		],
-		"description": "Maison T5. IdÃ©ale pour grands groupes. 45 minutes de Paris Saint-Lazare.",
+		"description": "Maison T5. Idéale pour grands groupes. 45 minutes de Paris Saint-Lazare.",
 		"host": {
 			"name": "Karen Guillet",
 			"picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
@@ -474,7 +474,7 @@
 	},
 	{
 		"id": "1e181317",
-		"title": "Loft de Luxe Ã  la DÃ©fense",
+		"title": "Loft de Luxe à la Défense",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg",
@@ -538,7 +538,7 @@
 	},
 	{
 		"id": "2139a317",
-		"title": "Cheap - Chambre Paris 20",
+		"title": "Cheap - Chambre Paris 20e",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg",
 		"pictures": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg"

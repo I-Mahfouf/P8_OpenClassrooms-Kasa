@@ -6,9 +6,8 @@
 .cardsLayout {
     @include flex-row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 60px;
-    padding: 50px;
+    padding : 50px;
     margin-top: 56px;
     margin-bottom: 56px;
     border-radius: 25px;
@@ -24,5 +23,6 @@
 }
 
 .cardsContainer {
-    width: 90%;
+    display: flex;
+    align-self: center;
 }

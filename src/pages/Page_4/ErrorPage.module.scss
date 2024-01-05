@@ -1,26 +1,38 @@
-.error404 {
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+//* Style de la page erreur *//
+
+.errorPageContainer {
+    @include flex-column;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.textContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3px;
-    color: #FF6060;
+
+    color: $primary-color;
+    padding-bottom: 139px;
+
+    &_title {
+        font-size: 288px;
+        font-weight: 700;
+        padding-bottom: 139px;
+    }
+
+    &_subtitle {
+        font-size: 36px;
+        font-weight: normal;
+    }
 }
 
-.error404 h1 {
-    font-size: 288px;
-    font-weight: 700;
-}
-
-.error404 h2 {
-    font-size: 36px;
-    font-weight: normal;
-    color: #FF6060
-}
-
-.error404 span {
-    text-decoration: underline;
-    margin-top: 100px;
-    margin-bottom: 139px;
+.returnHome {
     font-size: 18px;
+    color: $primary-color;
+    display: flex;
+    justify-content: center;
 }

@@ -1,3 +1,91 @@
-h1 p {
-    color: red($color: #000000);
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+//* Style de la page qui affiche le logement *//
+
+main {
+    padding: 0 100px 0;
+}
+
+.divTitleTags {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+//* Titre et location du logement *//
+
+.rentalHead {
+    @include flex-column;
+    color: $primary-color;
+
+    &_title {
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    &_location {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+//* Tags du logement *//
+
+.rentalTags {
+    @include flex-row;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    &_text {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: $secondary-color;
+        background-color: $primary-color;
+        border-radius: 25px;
+        padding: 10px;
+    }
+}
+
+//* Informations de l'hôte et évalutation *//
+
+.rentalHost {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    align-items: flex-end;
+}
+    
+.rentalInformations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    &_rating {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &_label {
+        color: $primary-color;
+    }
+    
+    &_pic {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    }
+}
+
+//* Collapses description et équipements *//
+
+.rentalCollapses {
+    @include flex-row;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }

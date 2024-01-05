@@ -1,0 +1,17 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+//* Style des étoiles *//
+
+.ratingContainer {
+  padding-top: 21px;
+  font-size: 24px;
+}
+
+.starFilled {
+  color: $primary-color; 
+}
+
+.starEmpty {
+  color: #ccc; 
+}

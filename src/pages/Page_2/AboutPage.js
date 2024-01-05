@@ -18,7 +18,7 @@ const AboutPage = () => {
         <section className={styles.cardsSection}>
           <div className={styles.cardsContainer}>
             {collapseDescriptions.map((data, index) => (
-              <Collapse key={index} title={data.title} description={data.description} />
+              <Collapse key={index} title={data.title} content={data.description} />
             ))}
           </div>
         </section>
