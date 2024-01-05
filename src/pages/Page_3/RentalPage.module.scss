@@ -7,10 +7,20 @@ main {
     padding: 0 100px 0;
 }
 
+//* Groupe d'éléments *//
+
 .divTitleTags {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.divHeadHost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 //* Titre et location du logement *//
@@ -36,7 +46,6 @@ main {
     @include flex-row;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
     
     &_text {
         display: flex;
@@ -54,7 +63,6 @@ main {
 .rentalHost {
     display: flex;
     flex-direction: column;
-    margin: 40px;
     align-items: flex-end;
 }
     
@@ -82,10 +90,14 @@ main {
     }
 }
 
-//* Collapses description et équipements *//
+//* Collapses : description et équipements *//
 
 .rentalCollapses {
     @include flex-row;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
+.customWidth {
+    width: 582px; 
+  }

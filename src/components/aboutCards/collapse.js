@@ -4,7 +4,7 @@ import styles from './collapse.module.scss';
 import PropTypes from 'prop-types';
 import arrow from '../../assets/arrow.png';
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content, customClass }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleToggle = () => {
@@ -12,7 +12,7 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className={`${customClass}`}>
       <div className={styles.collapseHead}>
         <img
           src={arrow}
@@ -32,6 +32,7 @@ const Collapse = ({ title, content }) => {
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  customClass: PropTypes.string,
 };
 
 export default Collapse;

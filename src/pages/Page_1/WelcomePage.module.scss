@@ -6,7 +6,8 @@
 .cardsLayout {
     @include flex-row;
     flex-wrap: wrap;
-    gap: 60px;
+    justify-content: center;
+    gap: 50px;
     padding : 50px;
     margin-top: 56px;
     margin-bottom: 56px;
