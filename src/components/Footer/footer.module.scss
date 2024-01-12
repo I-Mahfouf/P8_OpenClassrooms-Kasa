@@ -4,13 +4,26 @@
 //* Style du Footer *//
 
 .footerContainer {
-    @include footer-display;
-    padding-top: 68px;
-    padding-bottom: 30px;
-    background-color: $black;
-    gap: 29px;
+  @include footer-display;
+  padding: 68px 0 29px;
+  background-color: $black;
+  gap: 29px;
+
+  @media screen and (max-width: 650px) {
+    padding: 66px 0 58px;
+    gap: 14px;
+	}
+
+  @media screen and (max-width: 375px) {
+    padding: 66px 121px 58px;
+  }
 }
 
 .footerText {
-    color: $secondary-color;
+  color: $secondary-color;
+  text-align: center;
+
+  @media screen and (max-width: 650px) {
+	font-size: 12px;
+	}
 }

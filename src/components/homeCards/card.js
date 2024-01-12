@@ -10,12 +10,13 @@ const Card = ({ id, title, cover }) => {
 
   return (
     // Utilisation de React Router Link pour créer un lien vers la page de location basée sur l'ID //
-    <Link to={`/rental/${id}`} className={styles.card}>
-      <img src={cover} alt='logement' className={styles.cardCover} />
-      <div className={styles.cardContent}>
-        <p>{title}</p>
-      </div>
-    </Link>
+    <div className={styles.card}>
+      <Link to={`/rental/${id}`} className={styles.card_Link}>
+        <div className={styles.card_Overlay}></div>
+        <img src={cover} alt='logement' className={styles.card_Cover} />
+        <p className={styles.card_Title}>{title}</p>
+      </Link>
+    </div>
   );
 };
 

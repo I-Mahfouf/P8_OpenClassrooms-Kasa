@@ -1,19 +1,23 @@
+//* Importation des modules nécessaires de la bibliothèque React et des styles *//
 import React from 'react';
 import { useParams } from 'react-router-dom'
-import styles from '../Page_3/RentalPage.module.scss'
+import styles from './styles.module.scss'
 
+//* Importation des composants nécessaires du projet *//
 import Header from '../../components/Header/header';
 import Carrousel from '../../components/Carrousel/carrousel';
 import Rating from '../../components/Rating/rating';
-import Collapse from '../../components/aboutCards/collapse';
+import Collapse from '../../components/Collapse/collapse';
 import Footer from '../../components/Footer/footer';
+//* Importation des données (logements) depuis un fichier JSON *//
 import accomodationsData from '../../datas/logements.json';
 
 const RentalPage = () => {
+  // Utilisation du hook useParams pour récupérer les paramètres de l'URL, ici l'identifiant 'id' //
   const { id } = useParams();
+  // Recherche des données du logement correspondant à l'identifiant dans le fichier logements.json //
   const rentalData = accomodationsData.find((accomodation) => accomodation.id === id);
-
-  const { title, location } = rentalData;
+  const { title, location, } = rentalData; 
 
   return (
     <div>

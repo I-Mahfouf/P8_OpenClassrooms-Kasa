@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+@import '../styles/mixins.scss';
+@import '../styles/variables.scss';
 
 //* Style appliqué à l'ensemble des pages *//
 
@@ -11,4 +13,13 @@
 main {
 	display: flex;
 	flex-direction: column;
+	padding: 0 100px 0;
+
+	@media screen and (max-width: 1045px) {
+		padding: 0 50px 0;
+	}
+
+	@media screen and (max-width: 650px) {
+		padding: 0 20px 0;
+	}
 }

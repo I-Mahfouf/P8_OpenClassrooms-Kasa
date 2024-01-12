@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './banner.module.scss';
 
-const Banner = () => {
+const Banner = ({ text, imageUrl }) => {
   return (
     <div className={styles.bannerContainer}>
-      <p className={styles.bannerContainer_content}>Chez vous, partout et ailleurs</p>
+      <img src={imageUrl} alt="Banner" className={styles.bannerPicture} />
+      <p className={styles.bannerText}>{text}</p>
     </div>
   );
 };

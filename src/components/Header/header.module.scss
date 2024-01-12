@@ -9,20 +9,26 @@
   font-weight: 500;
   padding: 45px 100px 50px;
 
-  @include small-screen {
-    font-size: 12px;
-    padding: 45px 20px 27px;
+  @media screen and (max-width: 1045px) {
+		padding: 25px 50px 25px;
+	}
+
+	@media screen and (max-width: 650px) {
+		padding: 10px 20px 27px;
+	}
+}
+
+.logo {
+  @media screen and (max-width: 650px) {
+  width: 145px;
   }
 }
 
 .navList {
   @include flex-row;
   list-style-type: none;
+  padding: 0;
   gap: 57px;
-
-  @include small-screen {
-    gap: 26px;
-  }
 
   &_btnHome,
   &_btnAbout {
@@ -40,4 +46,14 @@
     text-decoration-line: underline;
     }
   }
+
+  @media screen and (max-width: 1045px) {
+		font-size: 24px;
+	}
+
+  @media screen and (max-width: 650px) {
+		font-size: 12px;
+    text-transform: uppercase;
+    gap: 26px;
+	}
 }

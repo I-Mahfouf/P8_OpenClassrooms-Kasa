@@ -1,9 +1,10 @@
 import React from 'react';
-import styles from '../Page_2/AboutPage.module.scss'
+import styles from './styles.module.scss'
 
 import Header from '../../components/Header/header';
-import Banner from '../../components/Banner/aboutBanner';
-import Collapse from '../../components/aboutCards/collapse';
+import Banner from '../../components/Banner/banner';
+import imageAboutpage from '../../assets/aboutBanner.png';
+import Collapse from '../../components/Collapse/collapse';
 import Footer from '../../components/Footer/footer';
 import collapseDescriptions from '../../datas/collapseDescriptions';
 
@@ -14,7 +15,7 @@ const AboutPage = () => {
         <Header />
       </header>
       <main>
-        <Banner />
+        <Banner imageUrl={imageAboutpage} />
         <section className={styles.cardsSection}>
           <div className={styles.cardsContainer}>
             {collapseDescriptions.map((data, index) => (

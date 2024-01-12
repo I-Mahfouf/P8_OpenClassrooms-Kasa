@@ -1,26 +1,21 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
-//* Style de la page qui affiche le logement *//
-
-main {
-    padding: 0 100px 0;
-}
-
 //* Groupe d'éléments *//
 
 .divTitleTags {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     gap: 20px;
 }
 
 .divHeadHost {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 650px) {
+        @include flex-column;
+    }
 }
 
 //* Titre et location du logement *//
@@ -32,11 +27,19 @@ main {
     &_title {
         font-weight: 500;
         font-size: 36px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 18px;
+        }
     }
 
     &_location {
         font-weight: 500;
         font-size: 18px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -54,21 +57,32 @@ main {
         color: $secondary-color;
         background-color: $primary-color;
         border-radius: 25px;
-        padding: 10px;
+        padding: 10px 30px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 10px;
+            border-radius: 10px;
+            padding: 2px 30px;
+            height: 25px;
+        }
     }
 }
 
 //* Informations de l'hôte et évalutation *//
 
 .rentalHost {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: flex-end;
+
+    @media screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
     
 .rentalInformations {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     align-items: center;
     gap: 10px;
 
@@ -79,6 +93,10 @@ main {
 
     &_label {
         color: $primary-color;
+
+        @media screen and (max-width: 650px) {
+            font-size: 12px;
+        }
     }
     
     &_pic {
@@ -87,6 +105,11 @@ main {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+
+    @media screen and (max-width: 650px) {
+        width: 32px;
+        height: 32px;
+    }
     }
 }
 
@@ -96,8 +119,17 @@ main {
     @include flex-row;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 650px) {
+        @include flex-column;
+        gap: 20px;
+    }
 }
 
 .customWidth {
     width: 582px; 
-  }
+
+    @media screen and (max-width: 650px) {
+        width: 100%
+    }
+}

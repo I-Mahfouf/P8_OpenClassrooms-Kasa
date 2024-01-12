@@ -5,32 +5,43 @@
 
 .bannerContainer {
   @include banner-styles;
-  background-image: url('../../assets/homebanner.png');
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 100%;
   height: 223px;
 
-  @include small-screen {
-    height: 111px;
-  }
-
-  &_content {
-    font-size: 48px;
-    color: $secondary-color;
-    position: relative;
-    z-index: 1;
-
-    @include small-screen {
-      padding-left: 16px;
-      font-size: 24px;
-    }
-
-  }
-  
   &:before {
     @include banner-shadow;
   }
+
+  @media screen and (max-width: 1045px) {
+    height: 111px;
+  }
 }
+  
+.bannerPicture {
+  @include banner-img;
+  width: 100%;
+  height: 223px;
+
+  @media screen and (max-width: 1045px) {
+    height: 111px;
+  }
+}
+
+.bannerText {
+  font-size: 48px;
+  color: $secondary-color;
+  position: absolute;
+  z-index: 1;
+
+  @media screen and (max-width: 1045px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 650px) {
+		padding-left: 16px;
+    padding-right: 16px;
+	}
+}
+
 
 

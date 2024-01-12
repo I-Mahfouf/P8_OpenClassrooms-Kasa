@@ -11,30 +11,52 @@
   border-radius: 5px;
   background-color: $primary-color;
   color: $secondary-color;
+  cursor: pointer;
+
+  @media screen and (max-width: 650px) {
+    height: 30px;
+  }
 
   &_title {
     font-size: 24px;
     font-weight: 500;
+
+    @media screen and (max-width: 650px) {
+      font-size: 13px;
+    }
   }
 }
 
 .collapseBody {
-  transition: 0.5s;
   background-color: $background-color;
-  border-radius: 5px;
 
   &_content {
+    height: 0;
+    overflow: hidden;
     font-size: 18px;
     font-weight: 300;
-    padding: 20px;
     color: $primary-color;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 650px) {
+      font-size: 13px;
+    }
   }
+}
+
+.showContent {
+  height: auto;
+  padding: 20px 25px;
 }
 
 //* Style des flèches de la collapse et du contenu *//
 
 .arrow {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+  @media screen and (max-width: 650px) {
+    width: 22px
+  }
 }
 
 .arrow_up {

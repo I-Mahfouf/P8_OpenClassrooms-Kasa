@@ -5,25 +5,30 @@ import PropTypes from 'prop-types';
 import arrow from '../../assets/arrow.png';
 
 const Collapse = ({ title, content, customClass }) => {
+  // Utilisation du hook useState pour gérer l'état de l'expansion/repli du contenu //
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // Fonction de gestion du basculement de l'état d'expansion/repli //
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
   };
 
   return (
     <div className={`${customClass}`}>
-      <div className={styles.collapseHead}>
+      <div className={styles.collapseHead} onClick={handleToggle}>
         <img
           src={arrow}
           alt='flèche de la collapse'
           className={`${styles.arrow} ${isExpanded ? styles.arrow_down : styles.arrow_up}`}
-          onClick={handleToggle}
         />
         <p className={styles.collapseHead_title}>{title}</p>
       </div>
       <div className={styles.collapseBody}>
-        {isExpanded && <p className={styles.collapseBody_content}>{content}</p>}
+      <div className={`${styles.collapseBody_content} ${isExpanded ? styles.showContent : ''}`}>
+        {Array.isArray(content)
+          ? content.map((item, index) => <div key={index}>{item}</div>)
+          : content}
+      </div>
       </div>
     </div>
   );
@@ -36,3 +41,8 @@ Collapse.propTypes = {
 };
 
 export default Collapse;
+
+// Les propTypes sont utilisés pour spécifier les types attendus des propriétés (title, content, customClass) //
+// Signale les erreurs potentielles //
+
+// onClick={handleToggle} : Cet évenement signifie que lorsque l'élément avec l'icône de la flèche est cliqué, la fonction handleToggle sera exécutée. //

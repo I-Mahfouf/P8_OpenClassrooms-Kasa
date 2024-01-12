@@ -14,13 +14,12 @@
     border-radius: 25px;
     background-color: $background-color;
 
-    @include small-screen {
-        background-color: $secondary-color;
+    @media screen and (max-width: 650px) {
+		background-color: $secondary-color;
         gap: 20px;
         padding: 0;
         margin-top: 22px;
-        margin-bottom: 27px;
-    }
+	}
 }
 
 .cardsContainer {

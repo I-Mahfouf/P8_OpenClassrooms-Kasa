@@ -1,20 +1,19 @@
 @import './variables.scss';
 
-//* Les points de rupture (breakpoints) *//
-
-@mixin small-screen {
-    @media (min-width: $small-screen) and (max-width: $medium-screen) {
-        @content
-    }
-};
-
 //* Les composants *//
 
 @mixin banner-styles {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@mixin banner-img {
+    display: flex;
     border-radius: 25px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 @mixin banner-shadow {
