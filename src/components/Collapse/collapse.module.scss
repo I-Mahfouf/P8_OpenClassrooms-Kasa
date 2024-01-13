@@ -4,14 +4,17 @@
 //* Style des cartes de la page d'accueil *//
 
 .collapseHead {
-  @include collpase-display;
-  padding-left: 15px;
-  padding-right: 15px;
+  @include collapse-display;
+  max-width: 1024px;
   height: 52px;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
   border-radius: 5px;
   background-color: $primary-color;
   color: $secondary-color;
   cursor: pointer;
+
 
   @media screen and (max-width: 650px) {
     height: 30px;
@@ -28,15 +31,20 @@
 }
 
 .collapseBody {
+  max-width: 1024px;
+  max-height: 0;
   background-color: $background-color;
+  position: relative;
+  margin: -5px auto 0;
+  overflow: hidden;
+  z-index: 0;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
 
   &_content {
-    height: 0;
-    overflow: hidden;
     font-size: 18px;
     font-weight: 300;
     color: $primary-color;
-    transition: all 0.3s ease;
+    padding: 20px 25px;
 
     @media screen and (max-width: 650px) {
       font-size: 13px;
@@ -45,14 +53,14 @@
 }
 
 .showContent {
-  height: auto;
-  padding: 20px 25px;
+  max-height: 1000px;
+  transition: max-height 1s ease-in-out;
 }
 
 //* Style des flèches de la collapse et du contenu *//
 
 .arrow {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   @media screen and (max-width: 650px) {
     width: 22px

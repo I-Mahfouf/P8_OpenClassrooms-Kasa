@@ -1,6 +1,8 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
+//* Style de la page de logement *//
+
 //* Groupe d'éléments *//
 
 .divTitleTags {
@@ -47,6 +49,7 @@
 
 .rentalTags {
     @include flex-row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 20px;
     
@@ -100,16 +103,16 @@
     }
     
     &_pic {
-    width: 64px;
-    height: 64px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
 
-    @media screen and (max-width: 650px) {
-        width: 32px;
-        height: 32px;
-    }
+        @media screen and (max-width: 650px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }
 

@@ -9,14 +9,12 @@
 
 .cardsContainer {
     @include flex-column;
-    align-content: center;
     gap: 38px;
-    margin: 38px 100px;
+    margin: 38px 0;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 650px) {
         margin: 19px 0;
         gap: 20px;
     }  
 }
 
-  

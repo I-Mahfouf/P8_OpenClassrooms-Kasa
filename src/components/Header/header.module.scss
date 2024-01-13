@@ -5,9 +5,11 @@
 
 .headerContainer {
   @include header-display;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 45px 100px 50px;
   font-size: 24px;
   font-weight: 500;
-  padding: 45px 100px 50px;
 
   @media screen and (max-width: 1045px) {
 		padding: 25px 50px 25px;
@@ -44,6 +46,7 @@
     &:hover,
     &:focus {
     text-decoration-line: underline;
+    color: $primary-color;
     }
   }
 

@@ -25,4 +25,4 @@ function AppRoutes() {
 
 export default AppRoutes;
 
-//* Fichier qui s'occupe des routes vers les différentes pages de KASA *//
+//* Fichier qui s'occupe des routes vers les différentes pages du site *//

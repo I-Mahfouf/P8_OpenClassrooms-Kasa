@@ -14,7 +14,7 @@ const Collapse = ({ title, content, customClass }) => {
   };
 
   return (
-    <div className={`${customClass}`}>
+    <div className={`${customClass ||''}`}>
       <div className={styles.collapseHead} onClick={handleToggle}>
         <img
           src={arrow}
@@ -23,8 +23,8 @@ const Collapse = ({ title, content, customClass }) => {
         />
         <p className={styles.collapseHead_title}>{title}</p>
       </div>
-      <div className={styles.collapseBody}>
-      <div className={`${styles.collapseBody_content} ${isExpanded ? styles.showContent : ''}`}>
+      <div className={`${styles.collapseBody} ${isExpanded ? styles.showContent : ''}`}>
+      <div className={`${styles.collapseBody_content}`}>
         {Array.isArray(content)
           ? content.map((item, index) => <div key={index}>{item}</div>)
           : content}

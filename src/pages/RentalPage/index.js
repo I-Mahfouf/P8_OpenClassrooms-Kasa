@@ -1,6 +1,6 @@
 //* Importation des modules nécessaires de la bibliothèque React et des styles *//
-import React from 'react';
-import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
 import styles from './styles.module.scss'
 
 //* Importation des composants nécessaires du projet *//
@@ -13,11 +13,25 @@ import Footer from '../../components/Footer/footer';
 import accomodationsData from '../../datas/logements.json';
 
 const RentalPage = () => {
-  // Utilisation du hook useParams pour récupérer les paramètres de l'URL, ici l'identifiant 'id' //
   const { id } = useParams();
-  // Recherche des données du logement correspondant à l'identifiant dans le fichier logements.json //
+  const navigate = useNavigate();
+
+  //* Recherche des données du logement correspondant à l'identifiant dans le fichier logements.json *//
   const rentalData = accomodationsData.find((accomodation) => accomodation.id === id);
-  const { title, location, } = rentalData; 
+
+  useEffect(() => {
+    //* Vérifie si l'identifiant est valide *//
+    if (!rentalData) {
+      //* Redirection vers la page d'erreur si l'identifiant n'est pas trouvé *//
+      navigate('/error');
+    }
+  }, [id, navigate, rentalData]);
+
+  //* Condition pour afficher le contenu uniquement si l'identifiant est valide *//
+  if (!rentalData) {
+    return null;
+  }
+  const { title, location } = rentalData;
 
   return (
     <div>
