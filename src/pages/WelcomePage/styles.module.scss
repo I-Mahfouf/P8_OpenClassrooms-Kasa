@@ -3,6 +3,12 @@
 
 //* Style de la page d'accueil *//
 
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .cardsLayout {
     @include flex-row;
     flex-wrap: wrap;

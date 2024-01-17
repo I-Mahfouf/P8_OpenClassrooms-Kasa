@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/footer';
 
 const WelcomePage = () => {
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <header>
         <Header />
       </header>

@@ -10,7 +10,7 @@ import collapseDescriptions from '../../datas/collapseDescriptions';
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <header>
         <Header />
       </header>

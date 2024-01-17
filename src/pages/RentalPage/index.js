@@ -34,7 +34,7 @@ const RentalPage = () => {
   const { title, location } = rentalData;
 
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <header>
         <Header />
       </header>

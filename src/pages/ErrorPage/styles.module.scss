@@ -3,6 +3,12 @@
 
 //* Style de la page erreur *//
 
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .errorPageContainer {
     @include flex-column;
     justify-content: center;

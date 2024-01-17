@@ -3,6 +3,12 @@
 
 //* Style de la page de logement *//
 
+.pageContainer {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 //* Groupe d'éléments *//
 
 .divTitleTags {
@@ -122,6 +128,7 @@
     @include flex-row;
     justify-content: space-between;
     margin-bottom: 40px;
+    gap: 76px;
 
     @media screen and (max-width: 650px) {
         @include flex-column;
