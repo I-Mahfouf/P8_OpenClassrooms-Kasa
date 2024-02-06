@@ -4,8 +4,6 @@
 //* Style de la page de logement *//
 
 .pageContainer {
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -21,7 +19,7 @@
     justify-content: space-between;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 830px) {
         @include flex-column;
     }
 }
@@ -36,7 +34,11 @@
         font-weight: 500;
         font-size: 36px;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 1320px) {
+            font-size: 20px;
+          }
+
+        @media screen and (max-width: 830px) {
             font-size: 18px;
         }
     }
@@ -45,7 +47,7 @@
         font-weight: 500;
         font-size: 18px;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 830px) {
             font-size: 14px;
         }
     }
@@ -68,7 +70,7 @@
         border-radius: 25px;
         padding: 10px 30px;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 830px) {
             font-size: 10px;
             border-radius: 10px;
             padding: 2px 30px;
@@ -83,7 +85,7 @@
     @include flex-column;
     align-items: flex-end;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 830px) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -103,7 +105,7 @@
     &_label {
         color: $primary-color;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 830px) {
             font-size: 12px;
         }
     }
@@ -115,7 +117,7 @@
         object-position: center;
         border-radius: 50%;
 
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 830px) {
             width: 32px;
             height: 32px;
         }
@@ -130,7 +132,7 @@
     margin-bottom: 40px;
     gap: 76px;
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 830px) {
         @include flex-column;
         gap: 20px;
     }
@@ -139,7 +141,7 @@
 .customWidth {
     width: 582px; 
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 830px) {
         width: 100%
     }
 }
